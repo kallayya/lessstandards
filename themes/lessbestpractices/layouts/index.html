@@ -1,0 +1,50 @@
+{{ partial "header.html" . }}
+
+<div class="header">
+  <h1>{{ .Title }}</h1>
+  <!--<h2>{{ .Site.Params.subtitle }}</h2>-->
+</div>
+
+<div class="content">
+<!--
+  {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+    {{ .Render "summary"}}
+  {{ end }}
+
+  {{ partial "pagination.html" . }}
+-->
+<div class="content-section" id="lessExtension">
+	
+		<p>LESS is a dynamic style sheet language that extends the capability of CSS.</p>
+		<p>LESS is what is known as a CSS preprocessor, something which compiles back into regular CSS, which can then be read by a browser.</p>
+		<p>LESS provides features like variables, functions, mixins and operations that allow you to write more structured styles with less code</p>
+	
+
+	<p class="custom-heading">Why do we use LESS?</p>
+	<ul>
+		<li>LESS supports creating cleaner, cross-browser friendly CSS faster and easier.</li>
+		<li>LESS allows you to write modular CSS code, making it readable and easily maintainable.</li>
+		<li>It will make your CSS DRY (Don't repeat yourself).Don't repeat yourself is a core principal of computer programming.
+	</ul>
+
+	<p class="custom-heading">Advantages</p>
+	<ul>
+		<li>LESS easily generates CSS that works across all browsers</li>
+
+		<li>LESS enables you to write modular CSS code</li>
+
+		<li>LESS provides the use of mixins, variables and functions that enable us to save time and write better CSS code</li>
+	</ul>
+
+	<p class="custom-heading">Installation</p>
+	<p>The easiest way to install LESS is via npm, the <a target="_blank" href="https://nodejs.org/">node.js</a> package manager as below:</p>
+<pre>
+<code>
+npm install less
+</code>
+</pre>
+	<p>Please go through <a target="_blank" href="http://lesscss.org/">lesscss.org</a> for more details on installation.</p>
+</div>
+</div>
+
+{{ partial "footer.html" . }}
